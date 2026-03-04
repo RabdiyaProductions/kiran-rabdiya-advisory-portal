@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rabdiyaproductions.github.io/kiran-rabdiya-advisory-portal/sitemap.xml
