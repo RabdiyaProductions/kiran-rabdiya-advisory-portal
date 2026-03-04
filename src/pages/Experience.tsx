@@ -1,4 +1,5 @@
 import { SITE } from "../data/config";
+import { Link } from "react-router-dom";
 
 type CaseStudy = {
   title: string;
@@ -162,6 +163,7 @@ export function Experience() {
             For a fast view on risk, payments/variations, delay exposure, or contract amendments — call or email.
           </p>
           <div className="ctaRow">
+            <Link className="btn" to="/case-studies">View case studies</Link>
             <a className="btn primary" href={`tel:${SITE.phoneTel}`}>Call {SITE.phoneDisplay}</a>
             <a className="btn" href={`mailto:${SITE.email}?subject=${encodeURIComponent("Construction advisory enquiry")}`}>Email</a>
             <a className="btn" href="./brochure.pdf" target="_blank" rel="noreferrer">Brochure PDF</a>

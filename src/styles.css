@@ -230,3 +230,94 @@ hr.sep{border:none; border-top:1px solid var(--line); margin:16px 0}
   border-color:#b7c7da;
   box-shadow: 0 0 0 4px rgba(13,58,102,0.08);
 }
+
+
+/* ServiceFinder */
+.choiceGrid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:10px;
+}
+.choiceBtn{
+  text-align:left;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:14px;
+  padding:12px;
+  cursor:pointer;
+  transition: transform .08s ease, border-color .08s ease, box-shadow .08s ease;
+}
+.choiceBtn:hover{ transform: translateY(-1px); box-shadow: 0 8px 18px rgba(11,18,32,0.06); }
+.choiceBtn.active{ border-color: rgba(11,42,74,0.45); box-shadow: 0 10px 22px rgba(11,18,32,0.08); }
+@media (max-width: 900px){
+  .choiceGrid{ grid-template-columns: 1fr; }
+}
+
+/* Tables */
+.tableWrap{ overflow:auto; }
+.compareTable{
+  width:100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+.compareTable th, .compareTable td{
+  border-bottom:1px solid var(--line);
+  padding:10px 10px;
+  vertical-align: top;
+  font-size:14px;
+}
+.compareTable th{
+  text-align:left;
+  font-size:12px;
+  letter-spacing: .02em;
+  color: var(--muted);
+}
+
+/* Mobile CTA bar */
+.mobileCtaBar{
+  display:none;
+}
+@media (max-width: 720px){
+  body{ padding-bottom: 64px; }
+  .mobileCtaBar{
+    position:fixed;
+    left:0; right:0; bottom:0;
+    display:flex;
+    gap:10px;
+    padding:10px 12px;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+    border-top:1px solid var(--line);
+    z-index: 90;
+  }
+  .mBtn{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 10px;
+    border-radius: 999px;
+    border:1px solid var(--line);
+    background:#fff;
+    font-weight:800;
+    font-size:13px;
+  }
+  .mBtn.primary{
+    background: var(--brand);
+    border-color: var(--brand);
+    color:#fff;
+  }
+  .whatsAppFloat{ display:none; }
+}
+
+
+.preBox{
+  margin:10px 0 0;
+  padding:12px;
+  border-radius:14px;
+  background: #0b122008;
+  border: 1px solid var(--line);
+  white-space: pre-wrap;
+  font-size: 12px;
+  color: var(--ink);
+}

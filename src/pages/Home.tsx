@@ -44,6 +44,7 @@ export function Home() {
               <a className="btn" href={`mailto:${SITE.email}?subject=Construction%20advisory%20enquiry`}>Email</a>
               <a className="btn" href="./brochure.pdf" target="_blank" rel="noreferrer">Download brochure (PDF)</a>
               <Link className="btn" to="/resources">Free resources</Link>
+            <Link className="btn" to="/case-studies">Case studies</Link>
             </div>
 
             <p style={{ marginTop: 10 }}><small>

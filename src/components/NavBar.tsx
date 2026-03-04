@@ -15,6 +15,7 @@ export function NavBar() {
           <NavLink to="/services" className={({ isActive }) => (isActive ? "active" : "")}>Services</NavLink>
           <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>About</NavLink>
           <NavLink to="/experience" className={({ isActive }) => (isActive ? "active" : "")}>Experience</NavLink>
+          <NavLink to="/case-studies" className={({ isActive }) => (isActive ? "active" : "")}>Case studies</NavLink>
           <NavLink to="/resources" className={({ isActive }) => (isActive ? "active" : "")}>Resources</NavLink>
           <NavLink to="/service-area" className={({ isActive }) => (isActive ? "active" : "")}>Service area</NavLink>
           <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact</NavLink>
