@@ -209,3 +209,24 @@ hr.sep{border:none; border-top:1px solid var(--line); margin:16px 0}
   bottom:16px;
   z-index:80;
 }
+
+
+/* Form fields */
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  font-size:13px;
+  color: var(--muted);
+}
+.field input{
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  outline:none;
+}
+.field input:focus{
+  border-color:#b7c7da;
+  box-shadow: 0 0 0 4px rgba(13,58,102,0.08);
+}

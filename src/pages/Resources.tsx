@@ -54,6 +54,39 @@ export function Resources() {
           </div>
         </div>
       </div>
-    </main>
+    
+
+<section className="section">
+  <div className="container">
+    <div className="sectionTitle">
+      <h2 className="h2">Copy‑paste templates</h2>
+      <span className="badge">Faster enquiries</span>
+    </div>
+
+    <div className="grid2">
+      <div className="card">
+        <h3 style={{ marginTop: 0 }}>Google review request (send to colleagues/clients)</h3>
+        <p style={{ color: "var(--muted)" }}>
+          “Hi [Name], hope you’re well. If my support was helpful, could you leave a short Google review?
+          A couple of lines on what I helped with (contracts/variations/payments/programme) would mean a lot. Thanks — Kiran”
+        </p>
+      </div>
+
+      <div className="card">
+        <h3 style={{ marginTop: 0 }}>Initial enquiry (quick message)</h3>
+        <p style={{ color: "var(--muted)" }}>
+          “Hi Kiran — project in [location], approx [£value]. We’re at [stage] and the main issue is [payments/variations/delay/contract].
+          Can you advise and quote? Happy to share contract/quote + key emails.”
+        </p>
+      </div>
+    </div>
+
+    <div className="notice" style={{ marginTop: 12 }}>
+      <b>Note:</b> Replace the brackets with your details. Keep it factual — it gets a faster response.
+    </div>
+  </div>
+</section>
+
+</main>
   );
 }

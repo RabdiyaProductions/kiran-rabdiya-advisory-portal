@@ -43,7 +43,7 @@ export function Home() {
               <a className="btn primary" href={`tel:${SITE.phoneTel}`}>Call {SITE.phoneDisplay}</a>
               <a className="btn" href={`mailto:${SITE.email}?subject=Construction%20advisory%20enquiry`}>Email</a>
               <a className="btn" href="./brochure.pdf" target="_blank" rel="noreferrer">Download brochure (PDF)</a>
-              <a className="btn" href="#/resources">Free resources</a>
+              <Link className="btn" to="/resources">Free resources</Link>
             </div>
 
             <p style={{ marginTop: 10 }}><small>
@@ -110,6 +110,55 @@ export function Home() {
           </div>
         </div>
       </section>
+
+
+<section className="section">
+  <div className="container">
+    <div className="sectionTitle">
+      <h2 className="h2">Anonymised feedback</h2>
+      <span className="badge">Typical outcomes</span>
+    </div>
+
+    <div className="grid3">
+      <div className="card">
+        <div className="badge">Main contractor PM • £10m+ package</div>
+        <p style={{ marginTop: 10 }}>
+          “Kiran cut through the noise and gave us a tight action list. The variation backup pack was rebuilt
+          into something the other side couldn’t ignore.”
+        </p>
+        <p style={{ color: "var(--muted)", marginBottom: 0 }}>
+          — Payment + change control stabilised
+        </p>
+      </div>
+
+      <div className="card">
+        <div className="badge">Homeowner • NW London extension</div>
+        <p style={{ marginTop: 10 }}>
+          “He explained what was reasonable, what was risky, and what to ask for next. The checklist and email
+          template alone saved us weeks.”
+        </p>
+        <p style={{ color: "var(--muted)", marginBottom: 0 }}>
+          — Scope clarity + calmer conversations
+        </p>
+      </div>
+
+      <div className="card">
+        <div className="badge">Subcontractor director • live job</div>
+        <p style={{ marginTop: 10 }}>
+          “We were drowning in admin. Kiran rebuilt the log, prioritised high-value items, and helped get
+          momentum back on cash.”
+        </p>
+        <p style={{ color: "var(--muted)", marginBottom: 0 }}>
+          — Improved valuation discipline
+        </p>
+      </div>
+    </div>
+
+    <div className="notice" style={{ marginTop: 12 }}>
+      <b>Note:</b> Feedback examples are anonymised and illustrative. I don’t publish client names.
+    </div>
+  </div>
+</section>
 
       <section className="section">
         <div className="container">

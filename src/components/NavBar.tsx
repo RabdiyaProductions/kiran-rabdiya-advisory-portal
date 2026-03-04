@@ -15,6 +15,7 @@ export function NavBar() {
           <NavLink to="/services" className={({ isActive }) => (isActive ? "active" : "")}>Services</NavLink>
           <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>About</NavLink>
           <NavLink to="/experience" className={({ isActive }) => (isActive ? "active" : "")}>Experience</NavLink>
+          <NavLink to="/resources" className={({ isActive }) => (isActive ? "active" : "")}>Resources</NavLink>
           <NavLink to="/service-area" className={({ isActive }) => (isActive ? "active" : "")}>Service area</NavLink>
           <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>Contact</NavLink>
         </nav>
@@ -22,7 +23,7 @@ export function NavBar() {
         <div className="ctaRow">
           <a className="btn" href={`tel:${SITE.phoneTel}`}>Call</a>
           <a className="btn" href="./brochure.pdf" target="_blank" rel="noreferrer">Brochure PDF</a>
-          <a className="btn primary" href={`mailto:${SITE.email}?subject=Construction%20advisory%20enquiry`}>Get a quote</a>
+          <Link className="btn primary" to="/contact">Get a quote</Link>
         </div>
       </div>
     </header>
